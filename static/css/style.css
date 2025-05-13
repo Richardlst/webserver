@@ -1,0 +1,85 @@
+/* Custom styling for the application */
+body {
+    background-color: #f4f6f9;  /* Màu nền sáng hơn */
+    font-family: 'Roboto', sans-serif; /* Thêm font chữ từ Google Fonts */
+    color: #333333; /* Màu chữ tối để dễ đọc */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tăng độ mờ cho shadow */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Thêm bo góc cho card */
+    background-color: #ffffff; /* Màu nền trắng cho card */
+}
+
+.card-header {
+    background-color: #007bff; /* Màu nền header tươi sáng */
+    color: #ffffff; /* Màu chữ trắng cho header */
+    font-weight: bold; /* Làm đậm chữ trong header */
+    border-top-left-radius: 10px; /* Bo góc phần trên của card */
+    border-top-right-radius: 10px; /* Bo góc phần trên của card */
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 16px; /* Cải thiện độ đọc dễ dàng */
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+    color: #090909;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Màu nền chính cho nút */
+    border-color: #0056b3; /* Màu viền cho nút */
+    font-weight: 600; /* Làm đậm chữ trên nút */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng chuyển đổi cho nút */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Thay đổi màu khi hover */
+    transform: scale(1.05); /* Phóng to nút khi hover */
+}
+
+.table {
+    margin-bottom: 0;
+    background-color: #ffffff; /* Đảm bảo nền table là trắng */
+    border-radius: 8px; /* Bo góc cho bảng */
+    overflow: hidden; /* Đảm bảo không bị tràn viền */
+}
+
+.table th {
+    font-weight: 600;
+    background-color: #f1f1f1; /* Màu nền của các ô tiêu đề */
+    color: #333; /* Màu chữ tối cho dễ nhìn */
+    padding: 12px;
+}
+
+.table td {
+    padding: 12px;
+    color: #666; /* Màu chữ nhẹ nhàng cho các ô dữ liệu */
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Thêm màu nền cho các hàng chẵn */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        padding: 15px; /* Điều chỉnh padding cho card-header */
+    }
+
+    .card-header a {
+        margin-top: 10px;
+        color: #ffffff; /* Đảm bảo các liên kết trong card header là màu trắng */
+    }
+
+    .table th, .table td {
+        font-size: 14px; /* Giảm kích thước chữ trên màn hình nhỏ */
+    }
+
+    .btn-primary {
+        width: 100%; /* Đặt nút là full-width trên các màn hình nhỏ */
+    }
+}
